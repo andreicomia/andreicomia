@@ -14,64 +14,91 @@
       <ul>
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#education">Educatoin</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-
+  <section id="home" class="hero">
     <div class="hero-content"> 
-
-      <div>
-        <img src="images/prof.png" alt="profile">
+      <div class="profile-container">
+        <img class="profile" src="images/prof.png" alt="Andrei's Profile Picture">
       </div>
-      
       <div class="prof-des">
         <h2>Hello, I'm <span>Andrei</span></h2>
         <p>Aspiring Web Developer dedicated to building, learning, and solving problems through technology.</p>
         <a href="#projects" class="btn">See Projects</a>
       </div>
     </div>
-  <div id="about" class="about">
-    <h2>About Me</h2>
-    <p>
-      I am an IT student passionate about building practical and user-friendly, continuously learning and improving my skills in programming, design, and technology.
-    </p>
-  </div>
-
-  <div class="icon-container">
-    <img src="images/discord.png" alt="discord">
-    <img src="images/facebook.png" alt="facebook">
-    <img src="images/github.png" alt="github">
-    <img src="images/instagram.png" alt="instagram">
-  </div>
-
-  <div id="contact">
-    <h2 style="color: #00ffcc; text-align: center; margin-top: 50px;">Contact Me</h2>
-    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="contact-form">
-        <label>Your Email</label>
-        <input type="email" name="email" required placeholder="Enter your email">
-        
-        <label>Message</label>
-        <textarea name="message" rows="5" required placeholder="How can I help you?"></textarea>
-        
-        <button type="submit">Send Message</button>
-    </form>
-  </div>
-
-  <div id="projects" class="projects">
+  </section>
+  
+  <section id="projects" class="projects">
     <h2>My Projects</h2>
-    <a href="https://bhfinder-three.vercel.app/login" target="_blank">
-      <div class="cards">
+    <div class="cards">
+      <a href="https://bhfinder-three.vercel.app/login" target="_blank" class="card-link">
         <div class="card">
           <h3>BH FINDER</h3>
           <p>A simple website for easy online reservations.</p>
         </div>
+      </a>
+    </div>
+  </section>
+
+  <section id="certifications" class="certifications">
+    <h2>Certifications</h2>
+    <div class="cert-container">
+      <img class="cert" src="images/cert.png" alt="Certifications Proof">
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>
+      I am an IT student passionate about building practical and user-friendly web applications, continuously learning and improving my skills in programming, design, and technology.
+    </p>
+  </section>
+
+  <section id="education" class="education">
+    <h2>Education</h2>
+    <div class="education-container">
+      <div class="education-card">
+        <h3>Bachelor of Science in Information Technology</h3>
+        <p class="school">Guagua National College</p>
+        <p class="year">2023 - Present</p>
       </div>
-    </a>
-  </div>
+    </div>
+  </section>
+
+  <section id="contact-section">
+    <div class="social-section">
+      <h3>Connect With Me</h3>
+      <div class="icon-container">
+        <a href="#" target="_blank"><img src="images/discord.png" alt="Discord"></a>
+        <a href="#" target="_blank"><img src="images/facebook.png" alt="Facebook"></a>
+        <a href="#" target="_blank"><img src="images/github.png" alt="GitHub"></a>
+        <a href="#" target="_blank"><img src="images/instagram.png" alt="Instagram"></a>
+      </div>
+    </div>
+
+    <div id="contact" class="contact-area">
+      <h2>Contact Me</h2>
+      <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="contact-form">
+          <label for="email">Your Email</label>
+          <input type="email" id="email" name="email" required placeholder="Enter your email">
+          
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required placeholder="How can I help you?"></textarea>
+          
+          <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2026 | Andrei D. Comia | Student</p>
+  </footer>
 
 </body>
 </html>
