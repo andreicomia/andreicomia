@@ -133,56 +133,99 @@ section {
   box-shadow: 0 5px 15px rgba(0, 255, 204, 0.3);
 }
 
+/* PROJECTS SECTION (UPDATED TO CYAN #00ffcc STYLE) */
 .projects {
   text-align: center;
 }
 
 .projects h2 {
   font-size: 32px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   color: #00ffcc;
 }
 
-.cards {
+.project-cards {
   display: flex;
   justify-content: center;
-  gap: 25px;
+  gap: 30px;
   flex-wrap: wrap;
 }
 
-.card-link {
-  text-decoration: none;
-  color: inherit;
+.project-card {
+  background: #0a0a0a;
+  border: 2px solid #00ffcc; /* Updated to your hex #00ffcc */
+  box-shadow: 0 0 20px rgba(0, 255, 204, 0.15); /* Glow matches #00ffcc */
+  border-radius: 20px;
+  padding: 30px 25px;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.card {
-  background: #1a1a1a;
-  padding: 30px;
-  width: 300px;
-  min-height: 180px;
-  border-radius: 12px;
-  border: 1px solid #222;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 30px rgba(0, 255, 204, 0.35); /* Glow expands on hover */
 }
 
-.card:hover {
-  transform: translateY(-8px);
-  border-color: #00ffcc;
-  box-shadow: 0 6px 20px rgba(0, 255, 204, 0.15);
+.card-image-wrapper {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-bottom: 25px;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.card h3 {
+.card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
   margin-bottom: 15px;
-  color: #00ffcc;
-  font-size: 20px;
+  text-align: center;
 }
 
-.card p {
-  color: #aaaaaa;
+.card-desc {
+  font-size: 14px;
+  color: #cccccc;
+  line-height: 1.6;
+  text-align: center;
+  margin-bottom: 25px;
+  flex-grow: 1; /* Keeps buttons cleanly aligned across differing text lengths */
+}
+
+.card-btn {
+  display: inline-block;
+  background: #00ffcc; /* Updated button color to #00ffcc */
+  color: #000000; /* Dark text for contrast against neon cyan background */
+  text-decoration: none;
+  padding: 12px 0;
+  width: 80%;
+  border-radius: 30px;
+  font-weight: bold;
   font-size: 15px;
+  box-shadow: 0 4px 15px rgba(0, 255, 204, 0.3); /* Button shadow glow changed to cyan */
+  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  text-align: center;
 }
 
+.card-btn:hover {
+  background: #00e6b8; /* Slightly deeper cyan for interactive feedback */
+  transform: scale(1.03);
+  box-shadow: 0 6px 20px rgba(0, 255, 204, 0.5);
+}
+
+/* CERTIFICATIONS SECTION */
 .certifications {
   text-align: center;
 }
@@ -207,6 +250,7 @@ section {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
 
+/* ABOUT SECTION */
 .about {
   text-align: center;
 }
@@ -224,6 +268,7 @@ section {
   font-size: 18px;
 }
 
+/* EDUCATION SECTION */
 .education {
   text-align: center;
 }
@@ -266,6 +311,7 @@ section {
   font-size: 14px;
 }
 
+/* CONTACT SECTION */
 .social-section {
   text-align: center;
   margin-bottom: 40px;
@@ -363,6 +409,7 @@ section {
   color: #000;
 }
 
+/* FOOTER SECTION */
 .footer {
   height: 80px;
   width: 100%;
@@ -379,6 +426,7 @@ section {
   font-size: 14px;
 }
 
+/* RESPONSIVE DESIGN MEDIA QUERIES */
 @media (max-width: 768px) {
   header {
     padding: 15px 5%;
@@ -415,8 +463,8 @@ section {
     height: 250px;
   }
 
-  .card {
+  .project-card {
     width: 100%;
-    max-width: 320px;
+    max-width: 350px;
   }
 }
